@@ -6,7 +6,7 @@
     color: white;
     border-radius: 0.6rem;
     font-family: $fuentePrincipal;
-    max-width: 600px;
+    max-width: 450px;
     
 
     &__contenido{
@@ -46,7 +46,7 @@
         }
 
         .perroEnAdopcion{
-            min-width: 500px;
+            max-width: 500px;
     
             &__contenido  {
                 .adoptame{

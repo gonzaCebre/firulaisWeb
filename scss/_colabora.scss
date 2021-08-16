@@ -1,0 +1,22 @@
+@import "variables";
+
+.colabora{
+    font-family: $fuentePrincipal;
+
+    .titulo{
+        font-size: 1.2rem;
+        color: $fucsia;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .colabora{
+        font-size: 1.3rem;
+
+        .titulo{
+            font-size: 1.5rem;
+        }
+    }
+    
+}

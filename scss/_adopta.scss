@@ -1,0 +1,69 @@
+@import "variables";
+
+.perrosInfo{
+    font-family: $fuentePrincipal;
+    
+    color: rgb(0, 0, 0);
+
+    & ul {
+        list-style-type: none;
+        margin-left: -30px;
+    }
+
+    .titulo{
+        font-size: 1.2rem;
+        color: $fucsia;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .perrosInfo{
+        font-size: 1.3rem;
+
+        .titulo{
+            font-size: 1.5rem;
+        }
+    }
+    
+}
+
+.adopcion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1000px;
+
+    
+}
+
+@media only screen and (min-width: 576px){
+       
+    .card-perro {           
+        &:hover {
+            transform: scale(1.05);
+            transition-duration: 300ms;
+            cursor: pointer;  
+            
+            .adoptame{
+                animation-name: cambioColor;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in;
+                animation-duration: 2s;
+
+                &:hover{
+                    transform: scale(1.05);
+                    transition-duration: 300ms;
+                    animation: none;
+                    color: rgb(0, 0, 0);
+                }
+            }
+            @keyframes cambioColor {
+                0% {color: #FF005D; }
+                50% {color: #000000; }
+                100% {color: #FF005D; }
+            }    
+        }
+
+    }
+}

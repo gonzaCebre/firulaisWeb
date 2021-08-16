@@ -118,12 +118,16 @@ main {
   justify-content: center;
   align-items: center; }
 
-h1 {
+h1, h2 {
   color: #FF005D;
   font-family: "Luckiest Guy", cursive;
   text-transform: uppercase;
   text-align: center;
   width: 100%; }
+
+h2 {
+  color: #00D49D;
+  width: fit-content; }
 
 /* COLORES */
 /* TEXTOS */
@@ -133,7 +137,7 @@ h1 {
   color: white;
   border-radius: 0.6rem;
   font-family: "Roboto", sans-serif;
-  max-width: 600px; }
+  max-width: 450px; }
   .perroEnAdopcion__contenido {
     display: flex;
     justify-content: center;
@@ -158,7 +162,7 @@ h1 {
     transition-duration: 300ms;
     cursor: pointer; }
   .carousel .perroEnAdopcion {
-    min-width: 500px; }
+    max-width: 500px; }
     .carousel .perroEnAdopcion__contenido .adoptame {
       animation-name: cambioColor;
       animation-iteration-count: infinite;
@@ -191,3 +195,114 @@ h1 {
     transition-duration: 300ms; }
   .portadas__portada__foto {
     border-radius: 3rem; }
+
+/* COLORES */
+/* TEXTOS */
+.perrosInfo {
+  font-family: "Roboto", sans-serif;
+  color: black; }
+  .perrosInfo ul {
+    list-style-type: none;
+    margin-left: -30px; }
+  .perrosInfo .titulo {
+    font-size: 1.2rem;
+    color: #FF005D;
+    margin-bottom: 0; }
+
+@media only screen and (min-width: 768px) {
+  .perrosInfo {
+    font-size: 1.3rem; }
+    .perrosInfo .titulo {
+      font-size: 1.5rem; } }
+
+.adopcion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 1000px; }
+
+@media only screen and (min-width: 576px) {
+  .card-perro:hover {
+    transform: scale(1.05);
+    transition-duration: 300ms;
+    cursor: pointer; }
+    .card-perro:hover .adoptame {
+      animation-name: cambioColor;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      animation-duration: 2s; }
+      .card-perro:hover .adoptame:hover {
+        transform: scale(1.05);
+        transition-duration: 300ms;
+        animation: none;
+        color: black; }
+  @keyframes cambioColor {
+    0% {
+      color: #FF005D; }
+    50% {
+      color: #000000; }
+    100% {
+      color: #FF005D; } } }
+
+/* COLORES */
+/* TEXTOS */
+.colabora {
+  font-family: "Roboto", sans-serif; }
+  .colabora .titulo {
+    font-size: 1.2rem;
+    color: #FF005D;
+    margin-bottom: 0; }
+
+@media only screen and (min-width: 768px) {
+  .colabora {
+    font-size: 1.3rem; }
+    .colabora .titulo {
+      font-size: 1.5rem; } }
+
+/* COLORES */
+/* TEXTOS */
+.barraBusqueda {
+  width: 40%;
+  margin-bottom: 1rem; }
+  .barraBusqueda .buscador {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #C4C4C4;
+    border-radius: 25px;
+    padding-left: 20px;
+    font-size: 1.2rem; }
+
+.articulos {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem; }
+  .articulos a {
+    text-decoration: none;
+    color: #424242;
+    display: flex;
+    justify-content: center;
+    max-height: 400px;
+    max-width: 350px; }
+  .articulos .art {
+    background-color: rgba(240, 240, 240, 0.993);
+    width: 90%;
+    height: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0.7rem 1rem; }
+    .articulos .art__foto {
+      margin: auto 0;
+      padding: 1rem;
+      border-radius: 2rem; }
+    .articulos .art__preview {
+      margin-top: 0; }
+      .articulos .art__preview__titulo {
+        color: #FF005D;
+        text-transform: uppercase;
+        font-family: "Luckiest Guy", cursive;
+        font-size: 1.4rem;
+        text-align: center; }

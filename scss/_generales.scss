@@ -13,6 +13,11 @@ h1{
     font-family: $fuenteSecundaria;
     text-transform: uppercase;
     text-align: center;
-    width: 100%;     
-    
+    width: 100%;  
+}
+
+h2 {
+    @extend h1;
+    color: $celeste;
+    width: fit-content;   
 }
