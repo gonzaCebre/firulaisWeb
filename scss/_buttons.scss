@@ -1,0 +1,35 @@
+@import "variables";
+
+@mixin boton ($backgroundColor, $color, $width, $height, $font-size){
+    background-color: $backgroundColor;
+    color: $color;
+    font-size: $font-size;
+    width: $width;
+    height: $height;
+}
+.button {
+    @include boton ($celeste, rgb(0, 0, 0), 90px, 25px, 12px );
+    background: linear-gradient(to bottom, #00D49D, #009b72);
+    box-shadow: 0 3px 3px rgba(88, 88, 88, 0.5);
+    font-family: $fuenteSecundaria;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 25px;
+    margin: 10px auto 20px auto;
+
+    &:hover{
+        color: $celeste;
+        background: rgb(0, 0, 0);
+    }
+}
+
+
+.adoptame {
+    @include boton (rgb(255, 255, 255), $fucsia, 120px,35px, 1rem );
+    font-family: $fuenteSecundaria;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 10px rgba(88, 88, 88, 0.5);
+    border: none;
+    border-radius: 25px;
+    margin-top: 20px;
+}

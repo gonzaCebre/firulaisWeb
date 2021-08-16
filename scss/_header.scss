@@ -1,0 +1,68 @@
+@import "variables";
+
+
+header{
+    color: $fucsia;
+    background-color: $amarillo;
+    font-family: $fuenteSecundaria;
+    text-transform: uppercase; 
+
+    .container-fluid{
+        padding: 0 3rem;
+
+        .logo{
+            height: 50px;
+        }
+
+        .navbar-nav{
+            margin-left: 3rem;
+
+            &-li{
+                list-style-type: none;
+
+                & a, .dropdown-toggle{
+                    text-decoration: none;
+                    color: $fucsia;
+                }
+
+                .dropdown-menu{
+                    background-color: $amarillo;
+                    border: none;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+/* MEDIA QUERIES PARA TABLET */
+
+@media only screen and (min-width: 768px){
+
+    .container-fluid{
+        padding-right: 3.5rem;
+        display: flex;
+        justify-content: space-between;
+
+        .navbar-nav{
+            display: flex;
+            justify-content: space-around;
+    
+            &-li a:hover{
+                color: rgb(255, 255, 255);
+            }
+        }
+
+    }
+
+}
+
+/* MEDIA QUERIES PARA NOTEBOOK */
+@media only screen and (min-width: 992px){
+    .navbar-nav{        
+        font-size: 1.2rem;
+    }
+
+}
+
+
