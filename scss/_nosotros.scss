@@ -1,0 +1,118 @@
+@import "variables";
+
+/* Seccion nosotros */
+.nosotros{
+    margin: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $fuentePrincipal;
+
+    & h2 {
+        text-align: left;
+    }
+
+    & ul {
+        list-style-type: none;
+        margin-left: -30px;
+    }
+
+    &__foto{
+        border-radius: 25px;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media only screen and (min-width: 768px){
+    .nosotros{
+        flex-direction: row;
+
+        &__foto{
+            width: 250px;
+            margin: 10px 1rem;
+        }
+    }
+
+    .derecha {
+        flex-direction: row-reverse;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .nosotros{
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Seccion Contacto */
+.contacto {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    &__form {
+        margin: 1rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__input {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+            align-items: center;
+
+            .input {
+                width: 100%;
+                padding: 0.2rem 1rem;
+                border-radius: 20px;
+                border: 1px solid $celeste;
+            }
+           
+        }
+
+        .newsletter{
+            flex-direction: row;
+            justify-content: center;
+            font-size: 0.6rem;
+        }  
+
+        .contenedorMensaje{
+            width: 100%;
+
+            .mensaje {
+                border-radius: 20px;
+                border: 1px solid $celeste;
+                padding: 20px;
+                width: 100%;
+            }
+        }
+
+        .botones{
+            margin: auto;
+
+            .grande {
+                width: 120px;
+                height: 35px;
+            }
+            
+
+            
+            .limpiar {
+                border-radius: 20px;
+                border: 1px solid $celeste;
+                font-size: 10px;
+                width: 90px;
+                height: 25px;
+            }
+        } 
+    }
+
+}

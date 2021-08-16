@@ -59,10 +59,10 @@
 
         <!--Seccion nosotros-->
         <section class="nosotros">
-            <img src="./media/img/logoFinal.png" alt="logo de adopta un firulais" class="nosotros__foto" id="nosotros">
+            <img src="./media/img/logoFinal.png" alt="logo de adopta un firulais" class="nosotros__foto">
 
-            <div class="nosotros__texto">
-                <h2 class="left">¿Quiénes somos?</h2>
+            <div>
+                <h2>¿Quiénes somos?</h2>
                 <p>Somos una asociación sin fines de lucro, que surgió con la intención de poder conectar
                     animales con hogar provisorio, con personas que busquen darles su hogar definitivo.
                     No tenemos refugio ni lugar físico. Solo funcionamos como nexo conector. Nuestro trabajo se sostiene
@@ -76,9 +76,9 @@
         <section class="nosotros derecha">
             <img src="./media/img/fotos/objetivos.jpg" alt="perro corriendo feliz" class="nosotros__foto">
 
-            <div class="nosotros__texto">
-                <h2 class="left">Nuestros objetivos:</h2>
-                <ul class="listaTiposDePerros">
+            <div>
+                <h2>Nuestros objetivos:</h2>
+                <ul>
                     <li>Conectar animales con hogar provisorio, con personas que busquen darles su hogar definitivo.
                     </li>
                     <li>Superar la situación de sobrepoblación, abandono, crueldad e indiferencia que viven millones
@@ -100,8 +100,8 @@
             <img src="./media/img/fotos/abrazo.jpg" alt="hombre abrazando a perro" class="nosotros__foto">
 
 
-            <div class="nosotros__texto">
-                <h2 class="left">¿Cómo trabajamos?</h2>
+            <div>
+                <h2>¿Cómo trabajamos?</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus fugit soluta earum minus,
                     omnis
                     adipisci consequatur iure officiis, accusamus dignissimos doloremque consequuntur blanditiis ipsum
@@ -114,7 +114,7 @@
         <hr>
 
         <!--Seccion contacto-->
-        <section class="contacto vertical">
+        <section class="contacto container">
             <h2>Contacto</h2>
 
 
@@ -122,23 +122,22 @@
             <p>Rellená el siguiente formulario y nos vamos a estar contactando cuanto antes.</p>
 
             <!--Inicio formulario de contacto-->
-            <form action="" class="contacto__form">
+            <form action="" class="row contacto__form">
                 <!--Nombre-->
-                <div class="contacto__form__input vertical">
+                <div class="col-12 col-md-6 contacto__form__input">
                     <label for="name">Nombre y apellido</label>
                     <input type="text" name="name" id="name" placeholder="Armando Casas" required class="input">
                 </div>
 
                 <!--Mail-->
-                <div class="contacto__form__input vertical">
+                <div class="col-12 col-md-6 contacto__form__input">
                     <label for="mail">Ingresa tu correo:</label>
-                    <input type="email" name="email" id="email" placeholder="armandocasas@gmail.com" required
-                        class="input">
+                    <input type="email" name="email" placeholder="armandocasas@gmail.com" required class="input">
                 </div>
 
 
                 <!--Provincia-->
-                <div class="contacto__form__input vertical">
+                <div class="col-12 col-md-6 contacto__form__input">
                     <label for="Provincia">Provincia</label>
                     <select name="provincia" id="provincia" class="input">
                         <option value="none" selected disabled hidden>Seleccioná una provincia</option>
@@ -170,25 +169,25 @@
                 </div>
 
                 <!--Newsletter-->
-                <div class="contacto__form__input">
+                <div class="contacto__form__input newsletter">
                     <input type="checkbox" name="newsletter" id="checkbox1">
-                    <label for="checkbox1" id="newsletter">Quiero suscribirme al newsletter</label>
+                    <label for="checkbox1">Quiero suscribirme al newsletter</label>
                 </div>
 
 
                 <!--Mensaje-->
-                <div class="contacto__form__input vertical" id="contenedorMensaje">
+                <div class="contenedorMensaje">
                     <label for="mensaje">Mensaje:</label>
                     <br>
-                    <textarea name="mensaje" id="mensaje" cols="70" rows="15"
+                    <textarea name="mensaje" class="mensaje" cols="70" rows="15"
                         placeholder="Hola! Cómo estan? Necesito..." required>
                     </textarea>
                 </div>
 
                 <!--Botones-->
-                <div class="contacto__form__input" id="botones">
+                <div class="botones">
                     <input type="submit" value="Enviar" class="button grande">
-                    <input type="reset" value="Limpiar campos" id="limpiar">
+                    <input type="reset" value="Limpiar campos" class="limpiar">
                 </div>
 
             </form>

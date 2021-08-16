@@ -306,3 +306,99 @@ h2 {
         font-family: "Luckiest Guy", cursive;
         font-size: 1.4rem;
         text-align: center; }
+
+/* COLORES */
+/* TEXTOS */
+/* Seccion nosotros */
+.nosotros {
+  margin: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif; }
+  .nosotros h2 {
+    text-align: left; }
+  .nosotros ul {
+    list-style-type: none;
+    margin-left: -30px; }
+  .nosotros__foto {
+    border-radius: 25px;
+    width: 80%;
+    margin-bottom: 10px; }
+
+@media only screen and (min-width: 768px) {
+  .nosotros {
+    flex-direction: row; }
+    .nosotros__foto {
+      width: 250px;
+      margin: 10px 1rem; }
+  .derecha {
+    flex-direction: row-reverse; } }
+
+@media only screen and (min-width: 992px) {
+  .nosotros {
+    font-size: 1.2rem; } }
+
+/* Seccion Contacto */
+.contacto {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .contacto__form {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .contacto__form__input {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+      align-items: center; }
+      .contacto__form__input .input {
+        width: 100%;
+        padding: 0.2rem 1rem;
+        border-radius: 20px;
+        border: 1px solid #00D49D; }
+    .contacto__form .newsletter {
+      flex-direction: row;
+      justify-content: center;
+      font-size: 0.6rem; }
+    .contacto__form .contenedorMensaje {
+      width: 100%; }
+      .contacto__form .contenedorMensaje .mensaje {
+        border-radius: 20px;
+        border: 1px solid #00D49D;
+        padding: 20px;
+        width: 100%; }
+    .contacto__form .botones {
+      margin: auto; }
+      .contacto__form .botones .grande {
+        width: 120px;
+        height: 35px; }
+      .contacto__form .botones .limpiar {
+        border-radius: 20px;
+        border: 1px solid #00D49D;
+        font-size: 10px;
+        width: 90px;
+        height: 25px; }
+
+/* COLORES */
+/* TEXTOS */
+.pagina404 {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif; }
+  .pagina404 .img404 {
+    margin-bottom: 20px;
+    height: 300px;
+    width: auto; }
+  .pagina404 .link404 {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #FF005D; }
