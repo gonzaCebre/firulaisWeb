@@ -17,9 +17,18 @@ header {
           text-decoration: none;
           color: #FF005D; }
         header .container-fluid .navbar-nav-li .dropdown-menu {
-          background-color: #FFE846;
           border: none;
-          text-align: center; }
+          text-align: center;
+          background-color: #FFE846; }
+          header .container-fluid .navbar-nav-li .dropdown-menu .dropdown-item {
+            background-color: #FFE846; }
+
+/* MEDIA QUERIES PARA TABLET */
+@media only screen and (max-width: 768px) {
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; } }
 
 /* MEDIA QUERIES PARA TABLET */
 @media only screen and (min-width: 768px) {
@@ -31,7 +40,7 @@ header {
       display: flex;
       justify-content: space-around; }
       .container-fluid .navbar-nav-li a:hover {
-        color: white; } }
+        color: black; } }
 
 /* MEDIA QUERIES PARA NOTEBOOK */
 @media only screen and (min-width: 992px) {
@@ -80,14 +89,14 @@ header {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
-  padding: 1.5rem 0; }
+  padding: 1rem 0 0rem 0; }
   .footer__seccion {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 0.6rem; }
     .footer__seccion p, .footer__seccion label {
-      margin-bottom: 0.3rem; }
+      margin-bottom: 0.1rem; }
     .footer__seccion .input {
       font-family: "Roboto", sans-serif;
       border-radius: 1rem;
@@ -107,7 +116,7 @@ header {
 /* MEDIA QUERIES PARA TABLET */
 @media only screen and (min-width: 768px) {
   .footer {
-    font-size: 1.3rem; } }
+    font-size: 1rem; } }
 
 /* COLORES */
 /* TEXTOS */
@@ -145,7 +154,8 @@ h2 {
     padding: 0.8rem; }
     .perroEnAdopcion__contenido__cajaFoto {
       border-radius: 1rem;
-      overflow: hidden; }
+      overflow: hidden;
+      max-width: 300px; }
     .perroEnAdopcion__contenido .card-title {
       color: #000000;
       font-weight: 700;
@@ -201,9 +211,6 @@ h2 {
 .perrosInfo {
   font-family: "Roboto", sans-serif;
   color: black; }
-  .perrosInfo ul {
-    list-style-type: none;
-    margin-left: -30px; }
   .perrosInfo .titulo {
     font-size: 1.2rem;
     color: #FF005D;
@@ -252,6 +259,9 @@ h2 {
     font-size: 1.2rem;
     color: #FF005D;
     margin-bottom: 0; }
+  .colabora a {
+    text-decoration: none;
+    color: #FF005D; }
 
 @media only screen and (min-width: 768px) {
   .colabora {
@@ -299,13 +309,20 @@ h2 {
       padding: 1rem;
       border-radius: 2rem; }
     .articulos .art__preview {
-      margin-top: 0; }
+      margin-top: 0;
+      margin-bottom: 1rem; }
       .articulos .art__preview__titulo {
         color: #FF005D;
         text-transform: uppercase;
         font-family: "Luckiest Guy", cursive;
         font-size: 1.4rem;
-        text-align: center; }
+        text-align: center;
+        margin-bottom: 0; }
+
+@media only screen and (min-width: 576px) {
+  .art:hover {
+    transform: scale(1.05);
+    transition-duration: 300ms; } }
 
 /* COLORES */
 /* TEXTOS */
@@ -318,9 +335,6 @@ h2 {
   font-family: "Roboto", sans-serif; }
   .nosotros h2 {
     text-align: left; }
-  .nosotros ul {
-    list-style-type: none;
-    margin-left: -30px; }
   .nosotros__foto {
     border-radius: 25px;
     width: 80%;

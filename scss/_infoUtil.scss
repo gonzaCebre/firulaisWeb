@@ -50,17 +50,26 @@
 
             &__preview{
                 margin-top: 0;
+                margin-bottom: 1rem;
                 &__titulo {
                     color: $fucsia;
                     text-transform: uppercase;    
                     font-family: $fuenteSecundaria;
                     font-size: 1.4rem;
                     text-align: center;
-
+                    margin-bottom: 0;
                 }
 
             }
             
     
+    }
+}
+
+@media only screen and (min-width: 576px){
+       
+    .art:hover {     
+        transform: scale(1.05);
+        transition-duration: 300ms;
     }
 }

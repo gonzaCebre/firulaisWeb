@@ -26,12 +26,26 @@ header{
                 }
 
                 .dropdown-menu{
-                    background-color: $amarillo;
                     border: none;
                     text-align: center;
+                    background-color: $amarillo;
+
+                    .dropdown-item{                        
+                        background-color: $amarillo;
+                    }
                 }
             }
         }
+    }
+}
+
+/* MEDIA QUERIES PARA TABLET */
+
+@media only screen and (max-width: 768px){
+    .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 }
 
@@ -49,7 +63,7 @@ header{
             justify-content: space-around;
     
             &-li a:hover{
-                color: rgb(255, 255, 255);
+                color: rgb(0, 0, 0);
             }
         }
 
